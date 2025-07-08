@@ -1,0 +1,49 @@
+---
+// src/layouts/Layout.astro
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>{title}</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="TrioAgus.my.id adalah penyedia jasa pembuatan website profesional & murah. Mulai dari Rp 400.000, cocok untuk UMKM, bisnis online, dan personal branding." />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Agus Trio" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="canonical" href="https://trioagus.my.id/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://trioagus.my.id/" />
+    <meta property="og:title" content="Jasa Pembuatan Website Murah & Profesional - TrioAgus.my.id" />
+    <meta property="og:description" content="Bikin website keren, cepat online, dan harga terjangkau. Cocok untuk UMKM, bisnis online, atau personal. Bisa custom!" />
+    <meta property="og:image" content="https://trioagus.my.id/og-image.jpg" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://trioagus.my.id/" />
+    <meta name="twitter:title" content="Jasa Pembuatan Website Murah & Profesional - TrioAgus.my.id" />
+    <meta name="twitter:description" content="Website mulai 400 ribuan. Bisa template atau custom. Cocok untuk UMKM, toko online, freelancer, dan portofolio." />
+    <meta name="twitter:image" content="https://trioagus.my.id/og-image.jpg" />
+
+    <!-- Icon & CSS -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  </head>
+  <body class="bg-gray-50">
+    <slot />
+  </body>
+  <script>
+    import '../styles/global.css';
+  </script>
+</html>

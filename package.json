@@ -1,0 +1,17 @@
+{
+  "name": "landing",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.11",
+    "astro": "^5.11.0",
+    "lightningcss.android-arm64.node": "^1.29.3-1",
+    "tailwindcss": "^4.1.11"
+  }
+}

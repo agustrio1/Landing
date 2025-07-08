@@ -1,0 +1,67 @@
+---
+// src/components/Footer.astro
+---
+
+<footer class="bg-gradient-to-r from-blue-700 to-purple-800 text-white py-12 mt-24 animate-fade-up">
+  <div class="container mx-auto px-6">
+    <div class="grid md:grid-cols-3 gap-10 mb-10">
+      <!-- Brand -->
+      <div>
+        <h3 class="text-2xl font-bold mb-4">Trio Agus</h3>
+        <p class="text-gray-300 mb-4">
+          Web Developer Indonesia — jasa pembuatan website dari Rp 400rb-an.
+        </p>
+        <p class="text-sm text-gray-400">
+          &copy; {new Date().getFullYear()} Trio Agus. All rights reserved.
+        </p>
+      </div>
+
+      <!-- Navigation -->
+      <div>
+        <h4 class="text-xl font-semibold mb-4">Navigasi</h4>
+        <ul class="space-y-2 text-gray-200">
+          <li><a href="/" class="hover:underline">Beranda</a></li>
+          <li><a href="#services" class="hover:underline">Layanan</a></li>
+          <li><a href="#contact" class="hover:underline">Kontak</a></li>
+          <li><a href="mailto:aguswebdigital@gmail.com" class="hover:underline">Email</a></li>
+        </ul>
+      </div>
+
+      <!-- Kontak -->
+      <div>
+        <h4 class="text-xl font-semibold mb-4">Hubungi</h4>
+        <div class="space-y-3 text-gray-200">
+          <div class="flex items-center space-x-2">
+            <i class="fab fa-whatsapp text-green-400 text-xl"></i>
+            <a href="https://wa.me/6281262465409" target="_blank" class="hover:underline">
+              +62 812-6246-5409
+            </a>
+          </div>
+          <div class="flex items-center space-x-2">
+            <i class="fas fa-envelope text-blue-300 text-xl"></i>
+            <a href="mailto:aguswebdigital@gmail.com" class="hover:underline">
+              aguswebdigital@gmail.com
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<style>
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-up {
+    animation: fade-up 1s ease-out both;
+  }
+</style>

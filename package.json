@@ -11,7 +11,6 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",
     "astro": "^5.11.0",
-    "lightningcss.android-arm64.node": "^1.29.3-1",
     "tailwindcss": "^4.1.11"
   }
 }
